@@ -1,0 +1,26 @@
+<header class="container-fluid">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">gifCool</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/gifs/random">Random</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/gifs/trending">TopTen</a>
+              </li>
+             
+            </ul>
+            <form class="d-flex" action="/gifs/search">
+              <input class="form-control me-2" type="search" placeholder="buscar" aria-label="Search" name="q" required>
+              <button class="btn btn-outline-light" type="submit">Buscar</button>
+              <input type="number" class="form-control mx-2" min="0" value="25" style="width: 100px;" name="limit">
+            </form>
+          </div>
+        </div>
+      </nav>
+</header>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<%-include('./partials/head') %> 
+</head>
+<body>
+    <div class="container bg-dark text-light p-5 mt-4">
+        <h1 class="display-3"><%= message %></h1>
+        <h2><i class="far fa-tired"></i> <%= error.status %></h2>
+        <pre><%= error.stack %></pre>
+        <div class="d-flex justify-content-end">
+            <a href="/">volver al home</a>
+        </div>
+    </div>
+</body>
+</html>
+
